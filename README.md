@@ -1,10 +1,10 @@
 <h1>Curso Programadores Cariocas</h1>
 <h2>Projeto Individual Módulo 4 – Resilia</h2>
 
-CONTEXTO: <i>A Resilia está pensando em lançar um novo sistema de acompanhamento e para isso precisa de ajuda para modelar um banco de dados que vai armazenar seus cursos, turmas e alunos.</i>
+CONTEXTO: <i>A Resilia está pensando em lançar um novo sistema de acompanhamento e para isso precisa de ajuda para modelar um banco de dados que vai armazenar seus cursos, turmas e alunos.</i><br><br>
 
 <b>⇨ Existem outras entidades além dessas três?</b>
-Resposta: Sim. É possível pensar em uma tabela para armazenar dados dos professores também.
+Resposta: Sim. É possível pensar em uma tabela para armazenar dados dos professores também.<br><br>
 
 
 <b>⇨ Quais são os principais campos e tipos?</b>
@@ -14,7 +14,7 @@ CREATE TABLE cursos(id_curso INT UNSIGNED NOT NULL, nome_curso VARCHAR(100), tur
 CREATE TABLE alunos(id_aluno INT UNSIGNED NOT NULL, nome_aluno VARCHAR(100), sobrenome_aluno VARCHAR(100), cpf_aluno VARCHAR(50), matricula_aluno VARCHAR(50), email_aluno VARCHAR(50), PRIMARY KEY(id_aluno));
 CREATE TABLE turmas(id_turma INT UNSIGNED NOT NULL, nome_turma VARCHAR(100), matriculas_turma VARCHAR(50), turno_turma VARCHAR(50), data_inicio DATE, data_fim DATE, PRIMARY KEY(id_turma));
 CREATE TABLE professores(id_professor INT UNSIGNED NOT NULL, nome_professor VARCHAR(100), sobrenome_professor VARCHAR(100), cpf_professor VARCHAR(50), matricula_professor VARCHAR(50), PRIMARY KEY(id_professor));
-
+<br><br>
 
 
 <b>⇨ Como essas entidades estão relacionadas?</b>
@@ -24,7 +24,7 @@ A entidade alunos estabelece relação N:N (muitos para muitos) com as entidades
 A entidade turmas estabelece relação N:N (muitos para muitos) com as entidades alunos e professores.
 A entidade professores estabelece relação N:N (muitos para muitos) com as entidades cursos, turmas e alunos.
 
-
+<br><br>
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 <b>Abaixo consta o script de criação do banco de dados gerado a partir do diagrama proposto.</b>

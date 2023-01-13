@@ -4,11 +4,11 @@
 CONTEXTO: <i>A Resilia está pensando em lançar um novo sistema de acompanhamento e para isso precisa de ajuda para modelar um banco de dados que vai armazenar seus cursos, turmas e alunos.</i><br><br>
 
 <b>⇨ Existem outras entidades além dessas três?</b>
-Resposta: Sim. É possível pensar em uma tabela para armazenar dados dos professores também.<br><br>
+<br>Resposta: Sim. É possível pensar em uma tabela para armazenar dados dos professores também.<br><br>
 
 
 <b>⇨ Quais são os principais campos e tipos?</b>
-Resposta: Os principais campos e tipos utilizados foram os campos detalhados no script a seguir ↓
+<br>Resposta: Os principais campos e tipos utilizados foram os campos detalhados no script a seguir ↓
 
 CREATE TABLE cursos(id_curso INT UNSIGNED NOT NULL, nome_curso VARCHAR(100), turno_curso VARCHAR(50), PRIMARY KEY(id_curso));
 CREATE TABLE alunos(id_aluno INT UNSIGNED NOT NULL, nome_aluno VARCHAR(100), sobrenome_aluno VARCHAR(100), cpf_aluno VARCHAR(50), matricula_aluno VARCHAR(50), email_aluno VARCHAR(50), PRIMARY KEY(id_aluno));
@@ -18,7 +18,7 @@ CREATE TABLE professores(id_professor INT UNSIGNED NOT NULL, nome_professor VARC
 
 
 <b>⇨ Como essas entidades estão relacionadas?</b>
-Resposta: No modelo de banco de dados `db_resilia` as entidades são cursos, turmas, alunos e professores. 
+<br>Resposta: No modelo de banco de dados `db_resilia` as entidades são cursos, turmas, alunos e professores. 
 A entidade cursos estabelece uma relação 1:N (um para muitos) com a entidade turmas. Por outro lado, a entidade cursos estabelece relação N:N (muitos para muitos) com as entidades alunos e professores.
 A entidade alunos estabelece relação N:N (muitos para muitos) com as entidades cursos, turmas e professores.
 A entidade turmas estabelece relação N:N (muitos para muitos) com as entidades alunos e professores.

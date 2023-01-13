@@ -8,7 +8,7 @@ CONTEXTO: <i>A Resilia está pensando em lançar um novo sistema de acompanhamen
 
 
 <b>⇨ Quais são os principais campos e tipos?</b>
-<br>Resposta: Os principais campos e tipos utilizados foram os campos detalhados no script a seguir ↓
+<br>Resposta: Os principais campos e tipos utilizados estão detalhados no script a seguir ↓
 
 CREATE TABLE cursos(id_curso INT UNSIGNED NOT NULL, nome_curso VARCHAR(100), turno_curso VARCHAR(50), PRIMARY KEY(id_curso));
 CREATE TABLE alunos(id_aluno INT UNSIGNED NOT NULL, nome_aluno VARCHAR(100), sobrenome_aluno VARCHAR(100), cpf_aluno VARCHAR(50), matricula_aluno VARCHAR(50), email_aluno VARCHAR(50), PRIMARY KEY(id_aluno));
